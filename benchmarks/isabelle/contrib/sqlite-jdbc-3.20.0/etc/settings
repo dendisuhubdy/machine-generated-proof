@@ -1,0 +1,5 @@
+# -*- shell-script -*- :mode=shellscript:
+
+ISABELLE_SQLITE_HOME="$COMPONENT"
+
+classpath "$ISABELLE_SQLITE_HOME/sqlite-jdbc-3.20.0.jar"

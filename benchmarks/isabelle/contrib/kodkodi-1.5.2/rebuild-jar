@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+
+export JAVAC="javac -target 1.6"
+echo "Building Kodkodi..." && \
+mkdir -p de/tum/in/isabelle/Kodkodi && \
+cd src && \
+$JAVAC ConsoleReporterV2.java && \
+$JAVAC ExternalSolverV2.java && \
+mv *V2*.class ../de/tum/in/isabelle/Kodkodi && \
+$JAVAC -cp ..:$CLASSPATH Kodkodi*.java && \
+mv Kodkodi*.class ../de/tum/in/isabelle/Kodkodi && \
+cd .. && \
+mkdir -p jar && \
+jar cf jar/kodkodi-1.5.2.jar de/ && \
+rm -fr de/

@@ -1,0 +1,13 @@
+# Java runtime options for 32bit platform
+-server
+-Dfile.encoding=UTF-8
+-Disabelle.threads=0
+-Duser.language=en
+-Dawt.useSystemAAFontSettings=on
+-Dswing.aatext=true
+-Dapple.laf.useScreenMenuBar=true
+-Dapple.awt.application.name=Isabelle
+-Xms128m
+-Xmx1024m
+-Xss4m
+-Disabelle.jedit_server=Isabelle2017

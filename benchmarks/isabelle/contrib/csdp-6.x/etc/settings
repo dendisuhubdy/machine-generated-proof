@@ -1,0 +1,14 @@
+# -*- shell-script -*- :mode=shellscript:
+
+case "$ISABELLE_PLATFORM_FAMILY" in
+  linux)
+    ISABELLE_CSDP="$COMPONENT/csdp6.1.0linuxp4/bin/csdp"
+    ;;
+  macos)
+    ISABELLE_CSDP="$COMPONENT/csdp6.0.1maccore/bin/csdp"
+    ;;
+  windows)
+    ISABELLE_CSDP="$COMPONENT/csdp6.1.0winp4/bin/csdp_cygwin"
+    ;;
+esac
+

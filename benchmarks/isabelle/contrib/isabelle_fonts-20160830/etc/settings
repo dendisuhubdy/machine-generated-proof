@@ -1,0 +1,15 @@
+# -*- shell-script -*- :mode=shellscript:
+
+if [ -z "$ISABELLE_FONTS" ]
+then
+  ISABELLE_FONTS="$COMPONENT/IsabelleText.ttf:$COMPONENT/IsabelleTextBold.ttf"
+else
+  ISABELLE_FONTS="$ISABELLE_FONTS:$COMPONENT/IsabelleText.ttf:$COMPONENT/IsabelleTextBold.ttf"
+fi
+
+if [ -z "$ISABELLE_FONTS_HTML" ]
+then
+  ISABELLE_FONTS_HTML="$COMPONENT/Vacuous.ttf"
+else
+  ISABELLE_FONTS_HTML="$ISABELLE_FONTS_HTML:$COMPONENT/Vacuous.ttf"
+fi

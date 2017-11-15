@@ -1,0 +1,6 @@
+Binary distribution of http://www.jfree.org/jfreechart as Isabelle component.
+
+The demo may be started like this:
+
+  isabelle java -jar jfreechart-1.0.14-demo.jar
+

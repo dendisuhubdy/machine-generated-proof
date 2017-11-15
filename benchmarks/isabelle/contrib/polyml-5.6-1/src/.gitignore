@@ -1,0 +1,47 @@
+# Intermediate files
+*.lo
+*.o
+*.obj
+*.pc
+*.la
+*.exe
+.libs/
+.deps/
+
+# Visual Studio
+x64/
+Release/
+Debug/
+Release64/
+Debug64/
+*.user
+*.tlog
+*.suo
+*.sdf
+*.opensdf
+
+# Temporaries
+x86asmtemp.S
+polytemp.txt
+
+# Final executables
+poly
+polyc
+polyimport
+!PolyImport/
+
+# Autoconf generated
+Makefile
+stamp-h1
+config.h
+config.log
+config.status
+fficonfig.h
+libffi/include/ffi.h
+libffi/include/ffitarget.h
+libtool
+local.exp
+.dirstamp
+
+# Others
+.polysave/

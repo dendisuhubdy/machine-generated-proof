@@ -1,0 +1,41 @@
+This distribution of CVC4 1.5 was assembled from
+
+    http://cvc4.cs.nyu.edu/downloads/
+
+The 32-bit Linux executable was built on Ubuntu 14.04 LTS, with
+"./configure --enable-static-binary; make" and finally "strip -s".
+
+The 64-bit Linux and 32-bit Windows executables were taken from
+
+    http://cvc4.cs.stanford.edu/downloads/builds/x86_64-linux-opt/cvc4-1.5-x86_64-linux-opt
+    http://cvc4.cs.stanford.edu/downloads/builds/win32-opt/cvc4-1.5-win32-opt.exe
+
+The Windows executable was renamed "cvc4-solver.exe". A "cvc4" wrapper script
+is provided to interpret Cygwin paths correctly.
+
+The Mac executables were built on a 64-bit OS X 10.9 server called "macbroy2".
+The "cvc4" executables and dynamic libraries were extracted from
+
+    builds/x86_64-apple-darwin13.4.0/production/src/main/.libs/cvc4
+    builds/x86_64-apple-darwin13.4.0/production/src/.libs/libcvc4.dylib
+    builds/x86_64-apple-darwin13.4.0/production/src/parser/.libs/libcvc4parser.dylib
+    /opt/local/lib/libgmp.10.dylib
+
+The "cvc4" binary was renamed "cvc4-solver". A "cvc4" wrapper script is
+provided to set up "DYLD_LIBRARY_PATH" correctly. Symbolic links were created
+for "libcvc4.4.dylib" and "libcvc4parser.4.dylib":
+
+    ln -s libcvc4.dylib libcvc4.4.dylib
+    ln -s libcvc4parser.dylib libcvc4parser.4.dylib
+
+On all platforms, binary files (including scripts and libraries) were made
+executable using
+
+    chmod ugo+x *
+
+Enjoy!
+
+
+        Jasmin Blanchette
+        Makarius Wenzel
+        22 September 2017

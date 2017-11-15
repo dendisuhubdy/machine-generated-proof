@@ -1,0 +1,13 @@
+prefix=/home/makarius/tmp/src/x86_64-linux
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+bindir=${exec_prefix}/bin
+
+Name: Poly/ML
+Description: Poly/ML run-time and main program libraries
+URL: http://www.polyml.org/
+Version: 5.6
+Requires:
+Libs: -L${libdir} -lpolymain -lpolyml -lgmp -lrt -ldl -lstdc++ -lgcc_s -lgcc 
+Cflags: -I${includedir}

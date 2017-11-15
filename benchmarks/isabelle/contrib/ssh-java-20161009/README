@@ -1,0 +1,16 @@
+SSH support for Java
+====================
+
+- JSch 0.1.54
+  http://www.jcraft.com/jsch
+  http://www.jcraft.com/jsch/LICENSE.txt (BSD style)
+
+- JZlib 1.1.3
+  http://www.jcraft.com/jzlib
+  http://www.jcraft.com/jzlib/LICENSE.txt (BSD style)
+
+- jce.jar from jEdit/FTP 1.3.2
+
+
+    Makarius
+    09-Oct-2016

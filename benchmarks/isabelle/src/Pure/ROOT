@@ -1,0 +1,10 @@
+chapter Pure
+
+session Pure =
+  description {*
+    The Pure logical framework
+  *}
+  options [threads = 1]
+  theories
+    Pure (global)
+    ML_Bootstrap (global)

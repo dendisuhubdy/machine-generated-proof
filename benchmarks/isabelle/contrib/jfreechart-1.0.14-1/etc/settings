@@ -1,0 +1,9 @@
+# -*- shell-script -*- :mode=shellscript:
+
+JFREECHART_HOME="$COMPONENT"
+JFREECHART_JAR_NAMES="iText-2.1.5.jar jcommon-1.0.18.jar jfreechart-1.0.14.jar"
+
+classpath "$JFREECHART_HOME/lib/iText-2.1.5.jar"
+classpath "$JFREECHART_HOME/lib/jcommon-1.0.18.jar"
+classpath "$JFREECHART_HOME/lib/jfreechart-1.0.14.jar"
+

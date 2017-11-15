@@ -1,0 +1,19 @@
+# -*- shell-script -*- :mode=shellscript:
+
+case "$ISABELLE_PLATFORM_FAMILY" in
+  windows)
+    CVC4_HOME="$COMPONENT/x86-windows"
+    ;;
+  *)
+    CVC4_HOME="$COMPONENT/${ISABELLE_PLATFORM64:-$ISABELLE_PLATFORM32}"
+    ;;
+esac
+
+CVC4_VERSION="1.5"
+
+CVC4_SOLVER="$CVC4_HOME/cvc4"
+
+if [ -e "$CVC4_HOME" ]
+then
+  CVC4_INSTALLED="yes"
+fi

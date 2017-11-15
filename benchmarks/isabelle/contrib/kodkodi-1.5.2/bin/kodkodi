@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+
+export CLASSPATH="$KODKODI_CLASSPATH:$CLASSPATH"
+export JAVA_LIBRARY_PATH="$KODKODI_JAVA_LIBRARY_PATH:$JAVA_LIBRARY_PATH"
+
+case "$ML_PLATFORM" in
+  *-cygwin)
+    export PATH="$KODKODI_JAVA_LIBRARY_PATH:$PATH"
+    ;;
+  *-linux)
+    export LD_LIBRARY_PATH="$KODKODI_JAVA_LIBRARY_PATH:$LD_LIBRARY_PATH"
+    ;;
+esac
+
+exec "$ISABELLE_TOOL" java $KODKODI_JAVA_OPT de.tum.in.isabelle.Kodkodi.Kodkodi "$@"

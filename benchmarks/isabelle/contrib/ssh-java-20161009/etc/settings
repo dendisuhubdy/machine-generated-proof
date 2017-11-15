@@ -1,0 +1,5 @@
+# -*- shell-script -*- :mode=shellscript:
+
+classpath "$COMPONENT/lib/jsch-0.1.54.jar"
+classpath "$COMPONENT/lib/jzlib-1.1.3.jar"
+classpath "$COMPONENT/lib/jce.jar"

@@ -1,0 +1,6 @@
+# -*- shell-script -*- :mode=shellscript:
+
+XZ_JAVA_HOME="$COMPONENT"
+
+classpath "$XZ_JAVA_HOME/lib/xz.jar"
+

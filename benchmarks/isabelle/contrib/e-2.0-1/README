@@ -1,0 +1,25 @@
+This distribution of E 2.0 (Turzum) has been compiled according to
+the "README" file included in the official version from
+http://wwwlehre.dhbw-stuttgart.de/~sschulz/E/Download.html.
+
+    $ tar zxvf E.tgz
+    $ cd E
+    $ ./configure
+    $ make
+
+The Linux executables were built on 32- and 64-bit installations of Ubuntu
+12.04.5 LTS running in VirtualBox. The Mac OS X executables were built on a
+64-bit Mac OS X 10.7 machine called "macbroy2". The Windows executable were
+built on a 64-bit virtual installation of Windows 7.
+
+A selection of the executables in "PROVER/" were moved to the
+platform-specific target directory (e.g., "x86_64-linux"). The "eproof_ram"
+script was slightly modified to use the correct path. The distribution also
+includes Josef Urban's "runepar.pl" script, modified to use the correct path.
+
+
+Enjoy!
+
+
+        Jasmin Blanchette
+        22 September 2017

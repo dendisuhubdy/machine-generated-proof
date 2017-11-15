@@ -1,0 +1,8 @@
+This is JDK/JRE 1.8.0_144 as required for Isabelle.
+
+See http://www.oracle.com/technetwork/java/javase/downloads/index.html
+for the original downloads, which are covered by the Oracle Binary
+Code License Agreement for Java SE.
+
+Linux, Windows, Mac OS X all work uniformly, depending on certain
+platform-specific subdirectories.

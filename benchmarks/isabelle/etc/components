@@ -1,0 +1,31 @@
+#hard-wired components
+src/Tools/jEdit
+src/Tools/Graphview
+src/Tools/VSCode
+src/HOL/Mirabelle
+src/HOL/Mutabelle
+src/HOL/Library/Sum_of_Squares
+src/HOL/SPARK
+src/HOL/Tools
+src/HOL/Tools/ATP
+src/HOL/TPTP
+#bundled components
+contrib/bash_process-1.2.1
+contrib/csdp-6.x
+contrib/cvc4-1.5-3
+contrib/e-2.0-1
+contrib/isabelle_fonts-20160830
+contrib/jdk
+contrib/jfreechart-1.0.14-1
+contrib/jortho-1.0-2
+contrib/kodkodi-1.5.2
+contrib/nunchaku-0.5
+contrib/polyml-5.6-1
+contrib/postgresql-42.1.4
+contrib/scala-2.12.3
+contrib/smbc-0.4.1
+contrib/ssh-java-20161009
+contrib/spass-3.8ds
+contrib/sqlite-jdbc-3.20.0
+contrib/xz-java-1.6
+contrib/z3-4.4.0pre

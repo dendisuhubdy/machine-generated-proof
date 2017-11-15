@@ -1,0 +1,20 @@
+KODKODI="$COMPONENT"
+KODKODI_VERSION="1.5.2"
+KODKODI_JAR="$KODKODI/jar"
+KODKODI_JNI="$KODKODI/jni"
+if [[ $ISABELLE_PLATFORM == "x86_64-linux" ]]; then
+  KODKODI_PLATFORM="x86-linux"
+elif [[ $ISABELLE_PLATFORM == "x86_64-darwin" ]]; then
+  KODKODI_PLATFORM="x86-darwin"
+else
+  KODKODI_PLATFORM=$ISABELLE_PLATFORM
+fi
+if [[ $ISABELLE_PLATFORM == "x86-linux" ]]; then
+  KODKODI_JAVA_OPT="-Dkodkod.minisat=_32 -Dkodkod.cryptominisat=_32 -Dkodkod.lingeling=_32"
+elif [[ $ISABELLE_PLATFORM == "x86-darwin" ]]; then
+  KODKODI_JAVA_OPT="-Dkodkod.minisat=1.14_old:1.14_old_32"
+else
+  KODKODI_JAVA_OPT=""
+fi
+KODKODI_CLASSPATH="$KODKODI_JAR/antlr-runtime-3.1.1.jar:$KODKODI_JAR/kodkod-1.5.jar:$KODKODI_JAR/kodkodi-$KODKODI_VERSION.jar:$KODKODI_JAR/sat4j-2.3.jar"
+KODKODI_JAVA_LIBRARY_PATH="$KODKODI_JNI/$KODKODI_PLATFORM"

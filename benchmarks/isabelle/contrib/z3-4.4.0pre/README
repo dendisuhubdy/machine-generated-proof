@@ -1,0 +1,36 @@
+This distribution of Z3 4.4.0 unstable (pre-release, revision 0482e7fe727c) was
+assembled from
+
+    https://github.com/Z3Prover/z3
+    http://z3.codeplex.com/releases
+
+The Cygwin version was copied from the "bin" directory of the "Windows x86
+unstable" archive "z3-4.4.0.0482e7fe727c-x86-win.zip", obtained from
+
+    http://z3.codeplex.com/releases/view/101914
+
+The "z3.exe" file was renamed "z3-solver.exe", and the "z3" wrapper script was
+added (to convert file paths). The DLL files were set to be executable using
+"chmod ugo+x".
+
+For Linux and Mac OS X, custom binaries were built from the source code,
+obtained from
+
+    https://github.com/Z3Prover/z3
+
+(revision 0482e7fe727c). The Linux executables were built on a 32-bit and a
+64-bit Ubuntu 10.04 LTS installation running on VirtualBox VM. The Mac
+executables were built on a 64-bit OS X 10.7 (Lion) server called "macbroy6".
+FPA support had to be disabled on OS X to work around "duplicate symbol" linker
+errors. The executables were "strip"ped.
+
+Enjoy!
+
+
+   Jasmin Blanchette
+   8 April 2015
+
+Based on earlier notes by
+
+   Sascha Böhme
+   19 September 2011

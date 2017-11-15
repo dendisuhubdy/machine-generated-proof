@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+THIS="$(cd "$(dirname "$0")"; pwd)"
+
+declare -a ARGS=()
+for ARG in "$@"
+do
+  ARGS["${#ARGS[@]}"]="$(cygpath -i -w "$ARG")"
+done
+
+exec "$THIS/csdp.exe" "${ARGS[@]}"

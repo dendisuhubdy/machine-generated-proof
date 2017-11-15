@@ -1,0 +1,12 @@
+# -*- shell-script -*- :mode=shellscript:
+
+SCALA_HOME="$COMPONENT"
+
+classpath "$SCALA_HOME/lib/jline-2.14.4.jar"
+classpath "$SCALA_HOME/lib/scala-compiler.jar"
+classpath "$SCALA_HOME/lib/scala-library.jar"
+classpath "$SCALA_HOME/lib/scalap-2.12.3.jar"
+classpath "$SCALA_HOME/lib/scala-parser-combinators_2.12-1.0.6.jar"
+classpath "$SCALA_HOME/lib/scala-reflect.jar"
+classpath "$SCALA_HOME/lib/scala-swing_2.12-2.0.0.jar"
+classpath "$SCALA_HOME/lib/scala-xml_2.12-1.0.6.jar"
